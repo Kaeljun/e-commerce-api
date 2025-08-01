@@ -1,11 +1,18 @@
 {
   "users": [
     {
-      "id": "0008529b-dbde-4530-a9b6-cb1000a17273",
+      "id": "21c32ced-bee1-4419-be4c-e91762857ddc",
       "name": "Felipe",
       "email": "felipe@email.com",
-      "password": "$2b$08$hRsmcnQf7E7w1D3XIvr5U.96flXonlkgFwoKUY2urcJzNtshutd5O",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAwMDg1MjliLWRiZGUtNDUzMC1hOWI2LWNiMTAwMGExNzI3MyIsImlhdCI6MTc1Mzc3NDY3NCwiZXhwIjoxNzUzODYxMDc0fQ.B99L8CD1WhsyfObRKL5j_umX3WO5C7HfEmJ29Q6JXGQ"
+      "password": "$2b$08$goKSz.97AuvNOYkdgFnLPenvserWq9FaNSIAr03HbeV.5iA1PnFou",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxYzMyY2VkLWJlZTEtNDQxOS1iZTRjLWU5MTc2Mjg1N2RkYyIsImlhdCI6MTc1NDA1NDMwNywiZXhwIjoxNzU0MTQwNzA3fQ.jK8hcVYOgD11neFVvkyE2BSGzeLOe02x3WrZtPFZ0fI"
+    },
+    {
+      "id": "6e7621e3-75b8-43ca-af7c-e565107c6ef9",
+      "name": "Michael",
+      "email": "michael@email.com",
+      "password": "$2b$08$k.Xc3deQ7chfQNV5EBVL1.UxZf7ZtH5.VmrUX93KaNMfzUlTE/I/e",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlNzYyMWUzLTc1YjgtNDNjYS1hZjdjLWU1NjUxMDdjNmVmOSIsImlhdCI6MTc1NDA1Mzg5NiwiZXhwIjoxNzU0MTQwMjk2fQ.kdGg5E29u-IJzP9R4C7N-uFoey1PjqCX_Qj-HM1PunQ"
     }
   ],
   "products": [
@@ -90,18 +97,60 @@
   ],
   "orders": [
     {
-      "id": 1,
-      "userId": "d800773b-a027-42ee-8efa-04058a17b503",
-      "productId": 1,
-      "quantity": 2,
-      "totalPrice": 399.98
+      "paymentMethod": "credit",
+      "cart": {
+        "products": [
+          {
+            "id": 1,
+            "name": "Wireless Headphones",
+            "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 199.99,
+            "quantity": 2
+          }
+        ],
+        "totalItems": 2,
+        "totalPrice": 299.98
+      },
+      "deliveryMethod": "shipment",
+      "address": {
+        "cep": "95072-210",
+        "street": "Rua Professor Jerônimo Ferreira Porto",
+        "number": "1166",
+        "neighborhood": "Bela Vista",
+        "city": "Caxias do Sul",
+        "addressName": "Casa"
+      },
+      "id": "0b490408-6288-4d83-858c-8506a5370272",
+      "date": "2025-08-01T13:10:49.519Z",
+      "userId": "21c32ced-bee1-4419-be4c-e91762857ddc"
     },
     {
-      "id": 2,
-      "userId": "d800773b-a027-42ee-8efa-04058a17b503",
-      "productId": 3,
-      "quantity": 1,
-      "totalPrice": 89.99
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 1,
+            "name": "Wireless Headphones",
+            "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 199.99,
+            "quantity": 3
+          }
+        ],
+        "totalItems": 3,
+        "totalPrice": 599.97
+      },
+      "deliveryMethod": "shipment",
+      "address": {
+        "cep": "95072-210",
+        "street": "Rua Professor Jerônimo Ferreira Porto",
+        "number": "1166",
+        "neighborhood": "Bela Vista",
+        "city": "Caxias do Sul",
+        "addressName": "Casa"
+      },
+      "id": "2455c228-f161-495c-809e-428a16d72db1",
+      "date": "2025-08-01T13:12:19.364Z",
+      "userId": "6e7621e3-75b8-43ca-af7c-e565107c6ef9"
     }
   ]
 }

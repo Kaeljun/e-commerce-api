@@ -17,13 +17,32 @@ type Product = {
   name: string;
   price: number;
   image: string;
+  quantity: number;
 };
 
-type Order = {
-  id: number;
-  userId: number;
-  productIds: number[];
-  totalAmount: number;
+export interface Address {
+  city: string;
+  street: string;
+  addressName: string;
+  neighborhood: string;
+  number: string;
+  cep: string;
+}
+
+export interface Cart {
+  products: Product[];
+  totalItems: number;
+  totalPrice: number;
+}
+
+export type Order = {
+  id: string;
+  userId;
+  paymentMethod: string;
+  cart: Cart;
+  deliveryMethod: string;
+  address: Address;
+  date: Date;
 };
 
 type Data = {

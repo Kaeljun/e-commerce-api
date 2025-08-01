@@ -21,12 +21,11 @@ export async function verifyToken(
   const decoded = jwt.verify(token, secret) as {
     id: string;
   };
-  // console.log("decoded:", decoded);
+  console.log("decoded:", decoded);
 
   const users = await readData("users");
-  // console.log("readData:", users);
   const user = users.find((u) => u.id === decoded.id);
-  // console.log("verify token:", user);
+  console.log("verify token:", user);
 
   return user;
 }

@@ -26,7 +26,7 @@ export const refreshTokenController = async (req, res, next) => {
       httpOnly: true,
       sameSite: "Strict",
       secure: false,
-      path: "/refresh-token",
+      path: "public/refresh-token",
     });
     res.clearCookie("access_token", {
       httpOnly: true,
@@ -49,7 +49,11 @@ export const refreshTokenController = async (req, res, next) => {
       { ...foundUser, refreshToken: newRefreshToken },
       foundUser.id
     );
-    return res.status(200).json({ message: "Tokens refreshed successfully" });
+    return res.status(200).json({
+      id: foundUser?.id,
+      name: foundUser?.name,
+      email: foundUser?.email,
+    });
   } catch (err) {
     next(err);
   }

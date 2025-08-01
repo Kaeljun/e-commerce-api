@@ -66,3 +66,5 @@
 20250729	03:06:23	7769913d-0586-4f2e-b3a5-236a9527d5bd	TokenExpiredError: jwt expired
 20250729	03:07:01	678e5ae3-02ee-41a0-a3ca-57549c89af32	TokenExpiredError: jwt expired
 20250729	03:07:14	07c0233f-99fd-4b69-8344-f177a3bb55bf	TokenExpiredError: jwt expired
+20250731	19:00:05	87c2c995-72e1-4c25-b8c1-6e66c0b7200f	Error: Entity with the specified ID not found.
+20250731	19:03:00	c52a32e3-183b-4334-a186-43d3fb618fea	TokenExpiredError: jwt expired

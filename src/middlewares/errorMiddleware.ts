@@ -3,8 +3,8 @@ import { logEvents } from "./logEvents";
 
 export const errorMiddleware = (err, req, res, next) => {
   logEvents(`${err.name}: ${err.message}`, "errLog.txt");
-  console.error(err.stack);
-
+  console.error(err);
+  console.log(req);
   if (res.headersSent) return next(err);
 
   if (err instanceof TokenExpiredError)

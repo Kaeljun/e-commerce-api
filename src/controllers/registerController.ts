@@ -7,7 +7,7 @@ export default async function registerController(req, res) {
 
   if (!email || !password) {
     return res.status(400).json({
-      message: "email and password is required.",
+      message: "Email e senha são obrigatórios",
     });
   }
 
@@ -17,7 +17,7 @@ export default async function registerController(req, res) {
 
   if (emailExists) {
     return res.status(400).json({
-      message: "email already exists.",
+      message: "Email já cadastrado",
     });
   }
 
@@ -32,6 +32,6 @@ export default async function registerController(req, res) {
   await writeData("users", newUser);
 
   return res.status(201).json({
-    message: "user created successfully",
+    message: "Usuário criado com sucesso",
   });
 }

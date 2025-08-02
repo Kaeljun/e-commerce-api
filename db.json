@@ -11,6 +11,11 @@
       "email": "ricardo@email.com",
       "password": "$2b$08$B/dmm9l7VTZnMorCriX8P.LW9CEzR3xNx1YTSGeH1g/V6CGwOSjXm",
       "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkNDAwMGEyLTBhNjktNGZkMi1hYTNmLTM2NWUyYTRhYjYzMCIsImlhdCI6MTc1NDA5ODg2NiwiZXhwIjoxNzU0MTg1MjY2fQ.6CHap2-BXyjVpGDwNNoODxrc10-0lF6T3ugxqjkU6ek"
+    },
+    {
+      "id": "ebad1155-a4ad-4f3a-87f8-b546ee1969a4",
+      "email": "michael@email.com",
+      "password": "$2b$08$IxPs9aPbXV2bTVOaShGXCOi1cDd7JARWbF1zUyEuBl2PbrnYo0aKC"
     }
   ],
   "products": [
@@ -153,6 +158,184 @@
       "date": "2025-08-02T00:13:18.847Z",
       "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
       "orderNumber": "1"
+    },
+    {
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 9,
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",
+            "name": "4K Monitor",
+            "price": 349.99,
+            "quantity": 1
+          }
+        ],
+        "totalItems": 1,
+        "totalPrice": 349.99
+      },
+      "deliveryMethod": "shipment",
+      "pickupAddress": "",
+      "address": {
+        "cep": "95072-210",
+        "street": "Rua Professor Jerônimo Ferreira Porto",
+        "number": "1166",
+        "neighborhood": "Bela Vista",
+        "city": "Caxias do Sul",
+        "addressName": "Casa"
+      },
+      "id": "1e930232-ea8d-4bba-a225-254f3bbf88ba",
+      "date": "2025-08-02T01:52:23.873Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "2"
+    },
+    {
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 9,
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",
+            "name": "4K Monitor",
+            "price": 349.99,
+            "quantity": 5
+          }
+        ],
+        "totalItems": 5,
+        "totalPrice": 1749.95
+      },
+      "deliveryMethod": "pickup",
+      "pickupAddress": "Loja Porto Alegre",
+      "id": "c19a0ac7-18b6-4239-b0fc-435000607595",
+      "date": "2025-08-02T02:16:21.575Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "3"
+    },
+    {
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 9,
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",
+            "name": "4K Monitor",
+            "price": 349.99,
+            "quantity": 5
+          }
+        ],
+        "totalItems": 5,
+        "totalPrice": 1749.95
+      },
+      "deliveryMethod": "shipment",
+      "pickupAddress": "",
+      "address": {
+        "cep": "95072-200",
+        "street": "Rua General Estilac Leal",
+        "number": "444",
+        "neighborhood": "Bela Vista",
+        "city": "Caxias do Sul",
+        "addressName": "Trabalho"
+      },
+      "id": "9b8f74aa-110b-474e-826b-844110a52dbc",
+      "date": "2025-08-02T02:19:00.615Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "4"
+    },
+    {
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 9,
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",
+            "name": "4K Monitor",
+            "price": 349.99,
+            "quantity": 11
+          }
+        ],
+        "totalItems": 11,
+        "totalPrice": 3849.8899999999994
+      },
+      "deliveryMethod": "pickup",
+      "pickupAddress": "Loja Caxias do Sul",
+      "id": "07e05761-4632-4d0f-9458-b17fd99e0b70",
+      "date": "2025-08-02T02:25:54.200Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "5"
+    },
+    {
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 3,
+            "image": "https://images.unsplash.com/photo-1632073383420-01461da1e082?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "name": "Bluetooth Speaker",
+            "price": 89.99,
+            "quantity": 1
+          }
+        ],
+        "totalItems": 1,
+        "totalPrice": 89.99
+      },
+      "deliveryMethod": "shipment",
+      "pickupAddress": "",
+      "address": {
+        "cep": "95072-210",
+        "street": "Rua Professor Jerônimo Ferreira Porto",
+        "number": "1166",
+        "neighborhood": "Bela Vista",
+        "city": "Caxias do Sul",
+        "addressName": "Casa"
+      },
+      "id": "0aa62b88-5976-4c02-b202-585393558929",
+      "date": "2025-08-02T02:27:05.196Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "6"
+    },
+    {
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 9,
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",
+            "name": "4K Monitor",
+            "price": 349.99,
+            "quantity": 1
+          }
+        ],
+        "totalItems": 1,
+        "totalPrice": 349.99
+      },
+      "deliveryMethod": "pickup",
+      "pickupAddress": "Loja Porto Alegre",
+      "id": "89800109-7ddb-428d-826e-1544b9e9c5e8",
+      "date": "2025-08-02T02:28:07.358Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "7"
+    },
+    {
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 4,
+            "image": "https://images.unsplash.com/photo-1623251609314-97cc1f84e3ed?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "name": "Laptop Stand",
+            "price": 39.99,
+            "quantity": 1
+          }
+        ],
+        "totalItems": 1,
+        "totalPrice": 39.99
+      },
+      "deliveryMethod": "pickup",
+      "pickupAddress": "Loja Porto Alegre",
+      "id": "59d53614-676c-4f2b-9ab7-193d106775ea",
+      "date": "2025-08-02T02:30:55.619Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "8"
     }
   ]
 }

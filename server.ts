@@ -9,8 +9,13 @@ import express from "express";
 import dotenv from "dotenv";
 import jsonServer from "json-server";
 import { refreshTokenController } from "./src/controllers/refreshTokenController";
-// import { logger } from "./middlewares/logEvents";
 import { authMeController } from "./src/controllers/authController";
+import {
+  getOrdersController,
+  postOrderController,
+} from "./src/controllers/ordersController";
+import logoutController from "./src/controllers/logoutController";
+// import { logger } from "./src/middlewares/logEvents";
 
 dotenv.config();
 const server = jsonServer.create();
@@ -31,6 +36,9 @@ server.use("/public", publicRouter);
 const protectedRouter = express.Router();
 protectedRouter.use(authMiddleware);
 protectedRouter.use("/auth", authMeController);
+protectedRouter.post("/logout", logoutController);
+protectedRouter.get("/order", getOrdersController);
+protectedRouter.post("/order", postOrderController);
 protectedRouter.use(router);
 server.use("/api", protectedRouter);
 

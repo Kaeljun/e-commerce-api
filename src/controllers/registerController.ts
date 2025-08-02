@@ -3,17 +3,17 @@ import bcrypt from "bcrypt";
 import { v4 as uuidv4 } from "uuid";
 
 export default async function registerController(req, res) {
-  const { name, email, password } = req.body;
+  const { email, password } = req.body;
 
-  if (!name || !email || !password) {
+  if (!email || !password) {
     return res.status(400).json({
-      message: "name, email and password is required.",
+      message: "email and password is required.",
     });
   }
 
   const users = await readData("users");
 
-  const emailExists = users.find((user: any) => user.email === email);
+  const emailExists = users?.find((user) => user.email === email);
 
   if (emailExists) {
     return res.status(400).json({
@@ -25,7 +25,6 @@ export default async function registerController(req, res) {
 
   const newUser = {
     id: uuidv4(),
-    name,
     email,
     password: hashPassword,
   };
@@ -33,8 +32,6 @@ export default async function registerController(req, res) {
   await writeData("users", newUser);
 
   return res.status(201).json({
-    id: newUser.id,
-    email: newUser.email,
-    password: newUser.password,
+    message: "user created successfully",
   });
 }

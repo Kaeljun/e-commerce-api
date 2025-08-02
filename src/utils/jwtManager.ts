@@ -1,6 +1,5 @@
 import jwt, { JwtPayload, Secret } from "jsonwebtoken";
 import { readData } from "./databaseManager";
-import { User } from "../models/User";
 
 export function generateAccessToken(id) {
   return jwt.sign({ id: id }, process.env.ACCESS_TOKEN_SECRET!, {
@@ -14,19 +13,20 @@ export function generateRefreshToken(id) {
   });
 }
 
+export interface DecodedUser {
+  id: string;
+}
+
 export async function verifyToken(
   token: string,
   secret: Secret
-): Promise<User | undefined> {
+): Promise<DecodedUser | undefined> {
   const decoded = jwt.verify(token, secret) as {
     id: string;
   };
-  // console.log("decoded:", decoded);
 
   const users = await readData("users");
-  // console.log("readData:", users);
-  const user = users.find((u) => u.id === decoded.id);
-  // console.log("verify token:", user);
+  const user = users?.find((u) => u.id === decoded.id);
 
   return user;
 }

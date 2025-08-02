@@ -1,11 +1,16 @@
 {
   "users": [
     {
-      "id": "0008529b-dbde-4530-a9b6-cb1000a17273",
-      "name": "Felipe",
+      "id": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
       "email": "felipe@email.com",
-      "password": "$2b$08$hRsmcnQf7E7w1D3XIvr5U.96flXonlkgFwoKUY2urcJzNtshutd5O",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAwMDg1MjliLWRiZGUtNDUzMC1hOWI2LWNiMTAwMGExNzI3MyIsImlhdCI6MTc1Mzc3NDY3NCwiZXhwIjoxNzUzODYxMDc0fQ.B99L8CD1WhsyfObRKL5j_umX3WO5C7HfEmJ29Q6JXGQ"
+      "password": "$2b$08$3HtSgSpiu9ZmSCprGwgyQO5DIW0yRPh5KV0KQoUPXbaIjY35harWq",
+      "refreshToken": ""
+    },
+    {
+      "id": "cd4000a2-0a69-4fd2-aa3f-365e2a4ab630",
+      "email": "ricardo@email.com",
+      "password": "$2b$08$B/dmm9l7VTZnMorCriX8P.LW9CEzR3xNx1YTSGeH1g/V6CGwOSjXm",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkNDAwMGEyLTBhNjktNGZkMi1hYTNmLTM2NWUyYTRhYjYzMCIsImlhdCI6MTc1NDA5ODg2NiwiZXhwIjoxNzU0MTg1MjY2fQ.6CHap2-BXyjVpGDwNNoODxrc10-0lF6T3ugxqjkU6ek"
     }
   ],
   "products": [
@@ -90,18 +95,64 @@
   ],
   "orders": [
     {
-      "id": 1,
-      "userId": "d800773b-a027-42ee-8efa-04058a17b503",
-      "productId": 1,
-      "quantity": 2,
-      "totalPrice": 399.98
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 9,
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",
+            "name": "4K Monitor",
+            "price": 349.99,
+            "quantity": 1
+          }
+        ],
+        "totalItems": 1,
+        "totalPrice": 349.99
+      },
+      "deliveryMethod": "shipment",
+      "pickupAddress": "",
+      "address": {
+        "cep": "95072-210",
+        "street": "Rua Professor Jerônimo Ferreira Porto",
+        "number": "1166",
+        "neighborhood": "Bela Vista",
+        "city": "Caxias do Sul",
+        "addressName": "Casa"
+      },
+      "id": "3af3c6fe-08b8-4361-8b43-f2e9cb597450",
+      "date": "2025-08-01T21:36:10.712Z",
+      "userId": "cd4000a2-0a69-4fd2-aa3f-365e2a4ab630",
+      "orderNumber": "1"
     },
     {
-      "id": 2,
-      "userId": "d800773b-a027-42ee-8efa-04058a17b503",
-      "productId": 3,
-      "quantity": 1,
-      "totalPrice": 89.99
+      "paymentMethod": "pix",
+      "cart": {
+        "products": [
+          {
+            "id": 3,
+            "image": "https://images.unsplash.com/photo-1632073383420-01461da1e082?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "name": "Bluetooth Speaker",
+            "price": 89.99,
+            "quantity": 10
+          }
+        ],
+        "totalItems": 10,
+        "totalPrice": 899.9000000000001
+      },
+      "deliveryMethod": "shipment",
+      "pickupAddress": "",
+      "address": {
+        "cep": "95072-200",
+        "street": "Rua General Estilac Leal",
+        "number": "444",
+        "neighborhood": "Bela Vista",
+        "city": "Caxias do Sul",
+        "addressName": "Trabalho"
+      },
+      "id": "79a34e4f-8907-4b53-95fa-3c1648632426",
+      "date": "2025-08-02T00:13:18.847Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "1"
     }
   ]
 }

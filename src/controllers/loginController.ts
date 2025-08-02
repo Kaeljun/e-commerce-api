@@ -13,7 +13,7 @@ export default async function loginController(req: any, res: any) {
 
   const users = await readData("users");
 
-  const userExists = users.find((user) => user.email === email);
+  const userExists = users?.find((user) => user.email === email);
 
   if (!userExists) {
     return res.status(403).json({
@@ -51,7 +51,6 @@ export default async function loginController(req: any, res: any) {
     user: {
       id: userExists.id,
       email: userExists.email,
-      name: userExists.name,
     },
   });
 }

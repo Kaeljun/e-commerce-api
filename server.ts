@@ -14,7 +14,7 @@ import {
   getOrdersController,
   postOrderController,
 } from "./src/controllers/ordersController";
-import logoutController from "./src/controllers/logoutControllet";
+import logoutController from "./src/controllers/logoutController";
 // import { logger } from "./src/middlewares/logEvents";
 
 dotenv.config();

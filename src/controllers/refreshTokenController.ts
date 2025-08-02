@@ -16,7 +16,7 @@ export const refreshTokenController = async (req, res, next) => {
     );
     const users = await readData("users");
 
-    const foundUser = users.find((user) => user.refreshToken === refreshToken);
+    const foundUser = users?.find((user) => user.refreshToken === refreshToken);
     if (!foundUser) return res.sendStatus(403);
 
     const newAccessToken = generateAccessToken(decoded?.id);
@@ -51,7 +51,6 @@ export const refreshTokenController = async (req, res, next) => {
     );
     return res.status(200).json({
       id: foundUser?.id,
-      name: foundUser?.name,
       email: foundUser?.email,
     });
   } catch (err) {

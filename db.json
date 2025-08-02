@@ -1,18 +1,16 @@
 {
   "users": [
     {
-      "id": "21c32ced-bee1-4419-be4c-e91762857ddc",
-      "name": "Felipe",
+      "id": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
       "email": "felipe@email.com",
-      "password": "$2b$08$goKSz.97AuvNOYkdgFnLPenvserWq9FaNSIAr03HbeV.5iA1PnFou",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxYzMyY2VkLWJlZTEtNDQxOS1iZTRjLWU5MTc2Mjg1N2RkYyIsImlhdCI6MTc1NDA1NDMwNywiZXhwIjoxNzU0MTQwNzA3fQ.jK8hcVYOgD11neFVvkyE2BSGzeLOe02x3WrZtPFZ0fI"
+      "password": "$2b$08$3HtSgSpiu9ZmSCprGwgyQO5DIW0yRPh5KV0KQoUPXbaIjY35harWq",
+      "refreshToken": ""
     },
     {
-      "id": "6e7621e3-75b8-43ca-af7c-e565107c6ef9",
-      "name": "Michael",
-      "email": "michael@email.com",
-      "password": "$2b$08$k.Xc3deQ7chfQNV5EBVL1.UxZf7ZtH5.VmrUX93KaNMfzUlTE/I/e",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlNzYyMWUzLTc1YjgtNDNjYS1hZjdjLWU1NjUxMDdjNmVmOSIsImlhdCI6MTc1NDA1Mzg5NiwiZXhwIjoxNzU0MTQwMjk2fQ.kdGg5E29u-IJzP9R4C7N-uFoey1PjqCX_Qj-HM1PunQ"
+      "id": "cd4000a2-0a69-4fd2-aa3f-365e2a4ab630",
+      "email": "ricardo@email.com",
+      "password": "$2b$08$B/dmm9l7VTZnMorCriX8P.LW9CEzR3xNx1YTSGeH1g/V6CGwOSjXm",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkNDAwMGEyLTBhNjktNGZkMi1hYTNmLTM2NWUyYTRhYjYzMCIsImlhdCI6MTc1NDA5ODg2NiwiZXhwIjoxNzU0MTg1MjY2fQ.6CHap2-BXyjVpGDwNNoODxrc10-0lF6T3ugxqjkU6ek"
     }
   ],
   "products": [
@@ -97,21 +95,22 @@
   ],
   "orders": [
     {
-      "paymentMethod": "credit",
+      "paymentMethod": "pix",
       "cart": {
         "products": [
           {
-            "id": 1,
-            "name": "Wireless Headphones",
-            "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "price": 199.99,
-            "quantity": 2
+            "id": 9,
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",
+            "name": "4K Monitor",
+            "price": 349.99,
+            "quantity": 1
           }
         ],
-        "totalItems": 2,
-        "totalPrice": 299.98
+        "totalItems": 1,
+        "totalPrice": 349.99
       },
       "deliveryMethod": "shipment",
+      "pickupAddress": "",
       "address": {
         "cep": "95072-210",
         "street": "Rua Professor Jerônimo Ferreira Porto",
@@ -120,37 +119,40 @@
         "city": "Caxias do Sul",
         "addressName": "Casa"
       },
-      "id": "0b490408-6288-4d83-858c-8506a5370272",
-      "date": "2025-08-01T13:10:49.519Z",
-      "userId": "21c32ced-bee1-4419-be4c-e91762857ddc"
+      "id": "3af3c6fe-08b8-4361-8b43-f2e9cb597450",
+      "date": "2025-08-01T21:36:10.712Z",
+      "userId": "cd4000a2-0a69-4fd2-aa3f-365e2a4ab630",
+      "orderNumber": "1"
     },
     {
       "paymentMethod": "pix",
       "cart": {
         "products": [
           {
-            "id": 1,
-            "name": "Wireless Headphones",
-            "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "price": 199.99,
-            "quantity": 3
+            "id": 3,
+            "image": "https://images.unsplash.com/photo-1632073383420-01461da1e082?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "name": "Bluetooth Speaker",
+            "price": 89.99,
+            "quantity": 10
           }
         ],
-        "totalItems": 3,
-        "totalPrice": 599.97
+        "totalItems": 10,
+        "totalPrice": 899.9000000000001
       },
       "deliveryMethod": "shipment",
+      "pickupAddress": "",
       "address": {
-        "cep": "95072-210",
-        "street": "Rua Professor Jerônimo Ferreira Porto",
-        "number": "1166",
+        "cep": "95072-200",
+        "street": "Rua General Estilac Leal",
+        "number": "444",
         "neighborhood": "Bela Vista",
         "city": "Caxias do Sul",
-        "addressName": "Casa"
+        "addressName": "Trabalho"
       },
-      "id": "2455c228-f161-495c-809e-428a16d72db1",
-      "date": "2025-08-01T13:12:19.364Z",
-      "userId": "6e7621e3-75b8-43ca-af7c-e565107c6ef9"
+      "id": "79a34e4f-8907-4b53-95fa-3c1648632426",
+      "date": "2025-08-02T00:13:18.847Z",
+      "userId": "0cf05c87-b254-4311-a0f9-6bafb417c6ed",
+      "orderNumber": "1"
     }
   ]
 }

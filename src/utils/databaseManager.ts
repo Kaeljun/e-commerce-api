@@ -6,7 +6,6 @@ type Entity = "users" | "products" | "orders";
 
 type User = {
   id: string;
-  name: string;
   email: string;
   password: string;
   refreshToken?: string;
@@ -37,12 +36,14 @@ export interface Cart {
 
 export type Order = {
   id: string;
-  userId;
+  userId: string;
   paymentMethod: string;
   cart: Cart;
   deliveryMethod: string;
-  address: Address;
-  date: Date;
+  address?: Address;
+  date: string;
+  orderNumber: string;
+  pickupAddress?: string;
 };
 
 type Data = {
@@ -68,7 +69,7 @@ type EntityMap = Data;
 
 export async function readData<K extends Entity>(
   entity: K
-): Promise<EntityMap[K]> {
+): Promise<EntityMap[K] | undefined | null> {
   const data = await fs.readFile(databasePath);
   const dataParse = JSON.parse(data.toString());
 
